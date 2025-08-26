@@ -1,11 +1,11 @@
 <section class="todoapp">
   <header class="header">
     <div class="container">
-      <h2>¿IDEAS PARA VIDEOS EN YOUTUBE?</h2>
-      <p>AQUI ES PARA COLOCAR TODOS LOS VIDEOS</p>
+      <img src="https://imgur.com/U80Htze.png" alt="logo" class="logo" />
+      <p>Ideas para videos</p>
       <input
         class="new-todo"
-        placeholder="Type new todo"
+        placeholder="escribe tus ideas 💡"
         autofocus
         type="text"
         [formControl]="newinputask"
@@ -81,9 +81,6 @@
           <a (click)="changefilter('completed')" routerLink="/completed" [class.selected]="filter() === 'completed'">Completed</a>
         </li>
       </ul>
-  
-      <!-- Hidden if no completed items are left ↓ -->
-      <button class="clear-completed">Clear completed</button>
     </footer>
   </div>
 </section>
